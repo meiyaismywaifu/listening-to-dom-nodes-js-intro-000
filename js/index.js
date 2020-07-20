@@ -14,5 +14,6 @@ input.addEventListener('keydown', function(internalVar) {
   } else {
       console.log(internalVar.key);
   }
-
 });
+
+var divs = document.querySelectorAll('div');
