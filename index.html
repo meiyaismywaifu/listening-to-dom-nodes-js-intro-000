@@ -16,9 +16,11 @@
           </script>
 
   <script>
-  var asd = "testing";
-        alert(asd); // this works
-
+  const main = document.getElementById('main');
+   
+  main.addEventListener('click', function(event) {
+    alert('I was clicked!');
+  });
   </script>
 
   <body>
