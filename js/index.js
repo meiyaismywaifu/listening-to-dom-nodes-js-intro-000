@@ -23,3 +23,10 @@ function bubble(){
 for (var i = 0; i < divs.length; i++){
   divs[i].addEventListener('click', bubble); // ??? when is this for loop called??
 }
+
+function capture(){
+  console,log(this.firstChild.nodeValue.trim() + ' captured');
+}
+for (var i = 0; i < divs.length, i++){
+  divs[i].addEventListener('click', capture, true);
+}
