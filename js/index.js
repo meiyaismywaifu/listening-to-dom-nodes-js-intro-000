@@ -16,7 +16,9 @@ input.addEventListener('keydown', function(internalVar) {
   }
 });
 
+
 var divs = document.querySelectorAll('div');
+/*
 function bubble(){
   console.log(this.firstChild.nodeValue.trim() + ' bubbled'); // why firstChild?
 }
@@ -29,4 +31,13 @@ function capture(){
 }
 for (var i = 0; i < divs.length; i++){
   divs[i].addEventListener('click', capture, true);
+}
+*/
+
+function bubble(){
+  stopPropagation();
+  console.log(this.firstChild.nodeValue.trim() + " bubbled");
+}
+for (var i = 0; i < divs.length; i++){
+  divs[i].addEventListener('click', bubble);
 }
