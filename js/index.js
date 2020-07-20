@@ -10,7 +10,7 @@ main.addEventListener('click', function(event) {
 var input = document.querySelector('input');
 input.addEventListener('keydown', function(internalVar) {
   if (internalVar.key === "g"){
-    return internalVar.preventDefault(); // can be made to do something, instead of just nothing
+    return internalVar.preventDefault(); // can be made to do something
   } else {
       console.log(internalVar.key);
   }
