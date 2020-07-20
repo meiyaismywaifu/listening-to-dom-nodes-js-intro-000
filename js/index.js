@@ -18,7 +18,7 @@ input.addEventListener('keydown', function(internalVar) {
 
 var divs = document.querySelectorAll('div');
 function bubble(){
-  console.log(this.firstChild.nodeValue.trim() + ' bubbled');
+  console.log(this.firstChild.nodeValue.trim() + ' bubbled'); // why firstChild?
 }
 for (var i = 0; i < divs.length; i++){
   divs[i].addEventListener('click', bubble);
