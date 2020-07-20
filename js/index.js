@@ -14,5 +14,5 @@ input.addEventListener('keydown', function(internalVar) {
   } else {
       console.log(internalVar.key);
   }
-  
+
 });
