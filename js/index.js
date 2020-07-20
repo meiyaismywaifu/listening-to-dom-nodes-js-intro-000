@@ -9,5 +9,10 @@ main.addEventListener('click', function(event) {
 
 var input = document.querySelector('input');
 input.addEventListener('keydown', function(internalVar) {
-  console.log(internalVar.key);
+  if (internalVar.key === "g"){
+    return g.preventDefault();
+  } else {
+      console.log(internalVar.key);
+  }
+  
 });
