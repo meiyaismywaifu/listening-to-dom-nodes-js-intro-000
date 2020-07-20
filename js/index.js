@@ -21,5 +21,5 @@ function bubble(){
   console.log(this.firstChild.nodeValue.trim() + ' bubbled'); // why firstChild?
 }
 for (var i = 0; i < divs.length; i++){
-  divs[i].addEventListener('click', bubble);
+  divs[i].addEventListener('click', bubble); // ??? when is this for loop called??
 }
