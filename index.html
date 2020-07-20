@@ -15,13 +15,7 @@
 		  src="js/index.js">
 	</script>
 
-  <script>
-  var main = document.querySelector("main");
-  console.log(main);
-  //main.addEventListener('click', function(event) {
-  //  alert('I was clicked!');
-  //});
-  </script>
+
 
   <body>
     <main id="main">My ID is "main"!</main>
@@ -49,5 +43,15 @@
         </div>
       </div>
     </div>
+
+    <script>
+    var main = document.getElementById("main");
+    console.log(main.innerHTML);
+    //main.addEventListener('click', function(event) {
+    //  alert('I was clicked!');
+    //});
+    </script>
+
+    
   </body>
 </html>
