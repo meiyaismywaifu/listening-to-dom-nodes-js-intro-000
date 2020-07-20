@@ -34,8 +34,8 @@ for (var i = 0; i < divs.length; i++){
 }
 */
 
-function bubble(){
-  stopPropagation();
+function bubble(e){
+  e.stopPropagation();
   console.log(this.firstChild.nodeValue.trim() + " bubbled");
 }
 for (var i = 0; i < divs.length; i++){
